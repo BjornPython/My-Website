@@ -1,0 +1,196 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: white;
+    margin: 0px;
+    text-align: center;
+    font-family: serif;
+
+    }
+
+
+
+
+#head {
+    background-color:  #102526;
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+
+
+     }
+
+#about_me {
+        background-color: #457373;
+        width: 100%;
+        height: 682px;
+
+        }
+
+#info {
+        display: grid;
+        gap: 30% 2%;
+        width: 90%;
+        margin: auto;
+        }
+
+.header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        color: #102526;
+}
+
+#name {
+        font-size: 5rem;
+        white-space: nowrap;
+        }
+
+#bio {
+        margin-top: -50px;
+        font-size: 2rem;
+        font-weight: 100;
+        white-space: nowrap;
+        }
+
+#info1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #102526;
+    width: auto;
+}
+
+#info2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    color: #102526;
+    width: auto;
+}
+
+#info3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    color: #102526;
+    width: auto;
+}
+
+
+
+
+
+#skills {
+    background-color: #5A6868;
+    width: 100%;
+    height: 780px;
+
+     }
+
+#projects {
+    background-color: #9B8148;
+    width: 100%;
+    height: 780px;
+    padding-top: 200px;
+
+
+     }
+
+#experience {
+    background-color: #7C4935;
+    width: 100%;
+    height: 780px;
+
+
+     }
+
+
+
+
+
+
+.head_text {
+        margin-top: 0px;
+        color:  #5A6868;
+        width: auto;
+        margin: 10px 6%;
+        display: inline-block;
+        text-decoration: none;
+	    white-space: nowrap;
+
+}
+
+.slidershow{
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+}
+.middle{
+  position: relative;
+    margin: auto;
+
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+
+
+
